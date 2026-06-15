@@ -477,3 +477,89 @@ Strict requirements:
 
 *Last updated: June 2026 · Source: live extraction from scalepad.com + presentation design best practices*  
 *Companion: `scalepad-design-system.md`*
+
+---
+
+## Enforcement addendum — hard floors for deck builders
+
+> Added June 2026 after slide audit. These override any ranges elsewhere in this guide.  
+> The build tool must treat these as non-negotiable minimums, not suggestions.
+
+### Type size hard floors (pt)
+
+| Element | MINIMUM | Typical | Never below |
+|---------|---------|---------|-------------|
+| Cover headline | **52pt** | 60pt | 40pt |
+| Cover gold sub-headline | **44pt** | 52pt | 36pt |
+| Section divider headline | **44pt** | 52pt | 36pt |
+| Content slide H1 | **36pt** | 44pt | 28pt |
+| Content slide H2 / subhead | **24pt** | 28pt | 20pt |
+| Body / bullet text | **20pt** | 22pt | 16pt |
+| Eyebrow label | **12pt** | 14pt | 11pt |
+| Stat number | **72pt** | 80–96pt | 60pt |
+| Stat label (caps) | **14pt** | 16pt | 12pt |
+| Table cell text | **18pt** | 20pt | 14pt |
+| Bottom footer (ScalePad, slide #) | **9pt** | 10pt | 8pt |
+
+**Rule for builders:** when a range like "52–72pt" appears anywhere in this guide, always use the LOWER bound as the minimum and apply it. Do not pick the minimum of the range — pick the midpoint or higher.
+
+### Illustration size hard floors (inches, 13.33" × 7.5" slide)
+
+| Element | MINIMUM height | Placement |
+|---------|---------------|-----------|
+| Cover character | **4.1"** (55% of slide height) | Right 55% of slide, baseline 0.4" from bottom |
+| Interior character | **3.5"** (47% of slide height) | Right half of slide |
+| Abstract illustration (arrows, shapes) | **3.0"** | Right half OR centered watermark |
+| Background watermark icon | **2.5"** | Bottom-right, 8–12% opacity |
+
+### Cover slide: allowed / not allowed
+
+| Allowed on cover | Not allowed on cover |
+|-----------------|----------------------|
+| Product logo (white, centered or top-left) | App/web action buttons (View, Export, Download) |
+| Client/company name | Integration tags or platform badges |
+| Document title (large, bold) | Metadata strings longer than 10 words |
+| Gold emphasis sub-headline | Status indicators or progress chips |
+| Date (bottom, small) | Navigation breadcrumbs |
+| ScalePad logo + slide number (footer) | More than 2 CTA buttons |
+| One short supporting line (max 12 words) | Bullet lists |
+| Character illustration (right half) | Tables or data grids |
+
+### Stat grid hard limit
+
+- **Maximum 2 stats per row** on a single slide
+- **Maximum 3 stats per slide** (use a 2+1 stacked layout)
+- If you have 4 stats → use 2 slides, each with 2 stats
+- Stat cards must have **minimum 16px vertical padding** inside
+- Stat number and label must have **minimum 12px gap** between them
+
+### Illustration placement rule
+
+Characters always go in the **right 50–60% of the slide**, never left. Text always goes left. The character's feet land at 0.4–0.5" from the slide bottom. The character's head should not be clipped by the slide top edge.
+
+Exception: cover slides may center the character if the headline occupies a full-width bottom band.
+
+### No web UI on slides — prohibited elements
+
+The following elements are web/app UI conventions and must **never appear on a slide**:
+
+- Action buttons (View, Export, Download, Open, Submit)
+- Integration/platform tag pills (Datto RMM, Autotask PSA, etc.) — unless on a dedicated "integrations" slide
+- Navigation breadcrumbs or progress indicators
+- Form inputs, dropdowns, checkboxes
+- Pagination controls
+- Toast notifications or alert banners
+- Any element whose purpose is "click to do something"
+
+**Only exception:** a single primary CTA button on a cover or closing slide ("Book a Demo →", "View Roadmap →") is acceptable as a visual design element — but must be styled as a presentation button (large, gold, 16pt text) not a web button (small, outlined, 13pt text).
+
+### Chart slides — charts must actually render
+
+If a slide includes a chart (bar, line, area):
+- The chart must be built as a **native pptxgenjs chart object** — not an HTML canvas, not a placeholder, not a legend-only element
+- Legend appears **above** the chart, not inside it
+- Chart area minimum height: **3.0"**
+- Axis labels: minimum **11pt**
+- Data labels on bars: minimum **10pt**
+- If the chart cannot be rendered natively, replace the slide with a stat grid showing the key data points instead
+

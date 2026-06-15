@@ -563,3 +563,111 @@ If a slide includes a chart (bar, line, area):
 - Data labels on bars: minimum **10pt**
 - If the chart cannot be rendered natively, replace the slide with a stat grid showing the key data points instead
 
+
+---
+
+## Professional deck principles — extracted from industry reference analysis
+
+> Added June 2026. Based on analysis of a 47-slide professional corporate deck.  
+> These principles close the remaining gap between "branded document" and "presentation-quality deck."
+
+### The 6 core principles of a premium deck
+
+**1. One accent hit per slide.** The accent color (Gold `#eba900`) appears in exactly one place per slide — a shape, a number, a word, or a bar. Never two competing accent elements on the same slide.
+
+**2. Photos bleed to edges — they never float.** Photos must bleed to at least one slide edge (right, left, or full-bleed). A photo inside a white card with a border is a web pattern, not a presentation pattern. Exception: product screenshots stay in white cards. Rule: photos bleed · screenshots card · illustrations fill right half.
+
+**3. Geometric shapes are structural, not decorative.** Accent shapes appear on nearly every slide as structural dividers — they mark the boundary between image and text zones. They are not ornamental.
+
+**4. Numbers are graphic objects, not text.** Stat numbers overlap shapes, bleed off cards, and sit on top of photos. They are visual objects first, labels second. A 72pt number is large enough to be read as a graphic element from the back of a room.
+
+**5. Dark/light alternation creates pacing.** Dark slides (navy canvas) = impact/section moments. Light slides (white canvas) = content/data. Maximum 2 same-theme slides in a row. Section dividers are always dark. Data/content slides prefer light.
+
+**6. Whitespace is structural.** Light slides have generous padding — content never crowds edges. 0.6" minimum safe margin on all sides is non-negotiable.
+
+---
+
+### Accent shape library (add these to every deck)
+
+These geometric shapes give a ScalePad deck its visual identity. All use Gold `#eba900` as fill or stroke.
+
+| Shape | Use | Dimensions |
+|-------|-----|------------|
+| Diagonal-cut divider | Separates image zone from text zone on two-column slides | Full slide height, 0.3–0.5" wide, 15° angle |
+| Solid accent rectangle | Behind a stat number, eyebrow label, or section title | ~2" × 0.35", flat fill |
+| Thin horizontal rule | Below a headline — the simplest accent | 1.5–2.5" wide, 3pt height |
+| Stat circle | Around a percentage or key number | 1.2–1.8" diameter, 3pt stroke, no fill |
+| Corner triangle | Peek of accent color from slide corner | 0.6" × 0.6" at slide corner |
+| Left accent sidebar | Full slide height, anchors all content slides | 0.25–0.35" wide, full height |
+
+**Rules for accent shapes:**
+- Maximum 2 accent shapes per slide
+- No gradients on shapes — flat fill only
+- No rounded corners on structural dividers (straight edges only)
+- Shapes must connect to content — never floating in empty space
+- Never mix Gold accent shapes with any other colored shapes
+
+---
+
+### Photo usage rules
+
+| Do | Don't |
+|----|-------|
+| Bleed photo to at least one slide edge | Float a photo inside a white card with a border |
+| Use desaturated/B&W photo on dark slides | Use 3–4 small photos in a grid (team slides only) |
+| Add a solid color overlay (30–50% opacity) for text legibility | Place text directly over a busy photo without overlay |
+| Place an accent shape over the photo/text boundary | Mix different aspect ratios on one slide |
+| Use one high-quality photo per slide | Scale a photo down to icon size — use an icon instead |
+
+---
+
+### Icon treatment rules
+
+- Style: outline only, never filled
+- Size: 24–36pt on content slides, 40–48pt on feature/three-up slides — all icons same size on a slide
+- Color: dark navy `#132435` on light slides · white on dark slides · Gold only for the single featured/active icon
+- Never color more than 1 icon on a slide in the accent color — it loses meaning
+- Grid: icons must align on a consistent baseline across cards
+
+---
+
+### Infographic slide types (add to layout catalogue)
+
+These are missing from the current ScalePad build and needed for process/framework content:
+
+| Slide type | When to use | Construction |
+|-----------|-------------|--------------|
+| **Horizontal step process** | 3–5 sequential steps | Numbered circles connected by arrows; accent color on first or current step; text below each circle |
+| **Vertical timeline** | History, milestones, roadmap | Vertical line center; nodes on alternating sides; dates in accent color |
+| **Pyramid / step-up** | Priority tiers, maturity levels | 3–4 stacked trapezoids, largest at base; accent on top tier or active tier |
+| **Cycle / circle process** | Repeating loops (quarterly, annual) | 4 nodes arranged in a circle with curved arrows; accent on entry node |
+| **Venn / overlap** | Two intersecting concepts | Two large circles overlapping ~30%; accent color on intersection zone |
+| **Cross-radial** | 4 equal categories | Diamond arrangement of 4 rounded shapes, icon in each, label below |
+| **Donut chart** | Part-to-whole with one key figure | Large donut, center number at 72pt+, legend to right, accent on primary segment |
+| **Horizontal comparison table** | Feature matrix, option comparison | Rows = features, columns = options; accent fill on recommended column header |
+
+**Construction rules for all infographics:**
+- Minimum font size inside diagram shapes: 14pt
+- Maximum 5 items in any process flow — split to two slides if more
+- One accent color item per diagram (the featured/current/primary one)
+- All other items in dark navy or 20% opacity navy — never gray alone
+- Connector lines: 1.5pt stroke, rounded ends, dark navy
+
+---
+
+### Dark/light alternation rule
+
+```
+Recommended slide theme sequence:
+
+DARK  → LIGHT → LIGHT → DARK  → LIGHT → LIGHT → LIGHT → DARK  → LIGHT → DARK
+Cover   Stats   Stats   Section  Feature Feature  Quote  Section  Data   Close
+```
+
+- Never 3 dark slides in a row
+- Never 4+ light slides in a row without a dark break
+- Section dividers are always dark (product gradient)
+- Closing slide is always dark (matches cover)
+- Chart/data slides prefer light backgrounds
+- Impact/moment slides prefer dark backgrounds
+
